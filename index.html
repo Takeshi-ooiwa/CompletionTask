@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="script.js"></script>
+    <title>フラッシュナンバー</title>
+    <style type="text/css">
+        #number {
+            font-size: 100px;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px;
+            border: 5px solid #999999;
+            background-color: #FFFFCC;
+        }
+
+        .button {
+            font-size: 30px;
+        }
+
+        .setting {
+            font-size: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>フラッシュナンバー</h3>
+    <hr>
+    <form name="flash">
+        <!-- <form name="flash" onSubmit="return false;"> -->
+        <p align="center"><input type="text" name="number" size="10" id="number"></p>
+        <p align="center"><input type="button" name="b_start" value="スタート" onClick="f_start()" class="button"></p>
+        <p align="center">問題設定：
+
+            <select name="set1" class="setting">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            桁
+            <select name="set2" class="setting">
+                <option value="2">2</option>
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            問
+            <select name="set3" class="setting">
+                <option value="2">2</option>
+                <option value="1" selected>1</option>
+                <option value="0.5">0.5</option>
+                <option value="0.4">0.4</option>
+                <option value="0.3">0.3</option>
+                <option value="0.2">0.2</option>
+                <option value="0.1">0.1</option>
+                <option value="0.05">0.05</option>
+            </select>
+            秒
+            <!-- <select name="set4" class="setting">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            レベル -->
+
+        </p>
+        <h4>
+            <p>
+                
+            </p>
+        </h4>
+    </form>
+
+    <hr>
+    <div id="f_seiseki"></div>
+
+</body>
+
+</html>
