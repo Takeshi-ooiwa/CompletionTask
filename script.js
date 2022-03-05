@@ -79,7 +79,7 @@ function f_kotae() {
             t = "○";
             cnt1++;
         } else {
-            // alert("答えは" + getComma(kotae) + "でした。");
+            alert("答えは" + getComma(kotae) + "でした。");
             alert("    actual: ", s);
             alert("  expected: ", getComma(kotae));
             t = "×";
