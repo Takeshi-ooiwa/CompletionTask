@@ -116,6 +116,7 @@ function f_kotae() {
         t = " [" + cnt1 + "/" + cnt2 + "]  ";
     }
     document.getElementById("f_seiseki").innerHTML = "【履歴】" + t + seiseki;
+    document.getElementById("number").style.transform = "skew(0deg, 0deg)scale(1,1) ";
 }
 
 function getComma(num) {
