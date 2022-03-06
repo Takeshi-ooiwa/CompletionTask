@@ -14,7 +14,23 @@ color_count = "#CCCCCC";
 //空白の回答対応
 let sss = "";
 
+function f_style() {
+    let typ = document.flash.set4.value;
+    if (typ === "Hard") {
+        document.getElementById("number").style.transform = "scale(-1,-1)";
+    } else if (typ === "Very Hard") {
+        document.getElementById("number").style.transform = "skew(30deg, 40deg)scale(-1,-1) ";
+    } else {
+        document.getElementById("number").style.transform = "skew(0deg, 0deg)scale(1,1) ";
+    }
+}
+
+
+
 function f_start() {
+
+    f_style();
+
     if (flag == 0) {
         //初期値
         set[0] = document.flash.set1.value;
@@ -64,6 +80,7 @@ function f_clear() {
     document.flash.b_start.disabled = false;
     document.flash.b_start.value = "答え合わせをする";
     document.flash.b_start.focus();
+    document.getElementById("number").style.transform = "skew(0deg, 0deg)scale(1,1) ";
     flag = 1;
 }
 
@@ -128,6 +145,7 @@ function number_format() {
         document.flash.b_start.disabled = false;
         document.flash.reset();
         document.flash.b_start.focus();
+        document.getElementById("number").style.transform = "skew(0deg, 0deg)scale(1,1) ";
     }
 
 }
