@@ -1,0 +1,32 @@
+/* Keep this rule in style.css */
+body {
+    font-size: 100%;
+
+  }
+/* 1.a の文字色を青色にしてください。 */
+h1{
+      color: blue;
+  }
+
+/* 2.b, c, d, e, f の背景色を黄色にしてください。 */
+p{
+    background-color: yellow;
+}
+/* 3.c と f を太文字にしてください。 */
+.awesome{
+    font-weight: bold;
+}
+/* 4.d の文字色を赤色にしてください。 */
+#d{
+    color: red;
+}
+/* 5.b と e のフォントサイズを 50% にしてください。 */
+.little{
+    font-size: 50%;
+}
+/* 6.e の文字色を緑色にしてください。 */
+.little{
+    color: green;
+}
+
+  /* Add more rules here */
