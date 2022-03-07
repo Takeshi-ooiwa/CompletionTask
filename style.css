@@ -11,6 +11,18 @@
     font-size: 30px;
 }
 
+.button2 {
+    font-size: 15px;
+    width: 400px;
+    /* display: block;
+    margin: 0 0 0 auto; */
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
 .setting {
     font-size: 20px;
     text-align: right;
