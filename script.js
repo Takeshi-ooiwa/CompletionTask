@@ -19,7 +19,7 @@ function f_style() {
     if (typ === "Hard") {
         document.getElementById("number").style.transform = "scale(-1,-1)";
     } else if (typ === "Very Hard") {
-        document.getElementById("number").style.transform = "skew(30deg, 40deg)scale(-1,-1) ";
+        document.getElementById("number").style.transform = "skew(15deg, 20deg)scale(-1,-1) ";
     } else {
         document.getElementById("number").style.transform = "skew(0deg, 0deg)scale(1,1) ";
     }
